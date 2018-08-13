@@ -34,7 +34,6 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/signup' do
-    binding.pry
     if !logged_in?
       erb :'users/create_user'
     else
